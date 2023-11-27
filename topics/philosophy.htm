@@ -1,0 +1,136 @@
+<!DOCTYPE HTML>
+<html id="hs-topic-p">
+<head>
+<title>Precept philosopy</title>
+<meta charset="windows-1252" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="generator" content="HelpSmith 9.7 (Build 23.607)" />
+<style type="text/css" media="screen">
+html {
+  height: 100%;
+}
+body {
+  background-color: #f0f3f7;
+  margin: 12px 0 12px 0;
+}
+</style>
+<link type="text/css" rel="stylesheet" href="../css/topics/style.css" />
+<script type="text/javascript" src="../js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="../js/settings.js?3a5a7ad9"></script>
+<script type="text/javascript" src="../js/core.min.js?3e9f1cdf"></script>
+<script type="text/javascript" src="../js/topic.min.js?3e9f1cdf"></script>
+<script type="text/javascript">
+	var topicContext = 50;
+</script>
+<!-- Web Help Topic -->
+</head>
+<body>
+<div>
+  <table class="align-c tbl0">
+    <tr class="row0">
+      <td class="cell0">
+        <p>&nbsp;</p>
+      </td>
+      <td class="cell1">
+        <div>
+          <table class="align-c tbl1">
+            <tr class="row0">
+              <td class="cell0">
+                <p>&nbsp;</p>
+              </td>
+              <td class="cell1">
+                <div>
+                  <table class="align-c tbl2">
+                    <tr class="row0">
+                      <td class="cell0">
+                        <p class="ps0"><span class="ts0">Navigation: </span><a href="modellingoilandgasassets.htm" class="hs0">Modelling Oil and Gas Assets</a><span class="ts0">&nbsp;&gt; </span></p>
+                        <h1 class="hd0"><span class="ts1">Precept philosopy</span></h1>
+                      </td>
+                      <td class="cell1">
+                        <p class="ps1"><a href="modellingoilandgasassets.htm" title="Modelling Oil and Gas Assets"><img width="32" height="32" alt="" src="images/navigation%20links/previous%20bluetriangles32.png" /></a><span class="ts0">&nbsp;</span><a href="scenariomanagement.htm" title="Scenario Management"><img width="32" height="32" alt="" src="images/navigation%20links/next%20bluetriangles32.png" /></a></p>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+              </td>
+              <td class="cell0">
+                <p>&nbsp;</p>
+              </td>
+            </tr>
+            <tr class="row0">
+              <td class="cell2">
+                <p>&nbsp;</p>
+              </td>
+              <td class="cell3">
+                <p class="ps2"><span class="ts2">&nbsp;</span></p>
+                <p class="ps3"><span class="ts3">When generating forecast, events can affects production / injection at every time step, such as:</span></p>
+                <p class="ps3"><span class="ts3">- introduction of a new profiles due to drilling new wells</span></p>
+                <p class="ps3"><span class="ts3">- conversions of existing wells</span></p>
+                <p class="ps3"><span class="ts3">- changes in process constraints due to facility upgrades</span></p>
+                <p class="ps3"><span class="ts3">- shutdowns</span></p>
+                <p class="ps3"><span class="ts3">&nbsp;</span></p>
+                <p class="ps3"><span class="ts3">The date of such events can be &quot;hard&quot;:</span></p>
+                <p class="ps3"><span class="ts3">- Start date of new profile can be manually entered in the &quot;New profiles&quot; section (see </span><a href="new-profile.htm" class="hs1">New profile</a><span class="ts3">)</span></p>
+                <p class="ps3"><span class="ts3">- Conversion date can be manually entered in the &quot;Conversion&quot; section (see </span><a href="conversion.htm" class="hs1">Well conversion</a><span class="ts3">)</span></p>
+                <p class="ps3"><span class="ts3">- Date of changes in constraints can be entered manually in the &quot;Constaints changes vs time&quot; section (see </span><a href="constraintsvstime.htm" class="hs1">Constraints changes vs time</a><span class="ts3">)</span></p>
+                <p class="ps3"><span class="ts3">- Shutdowns start and end date can be manually entered in the &quot;Shutdowns&quot; section (see </span><a href="shutdown.htm" class="hs1">Shutdowns</a><span class="ts3">)</span></p>
+                <p class="ps3"><span class="ts3">&nbsp;</span></p>
+                <p class="ps3"><span class="ts3">Entering &quot;hard&quot; date does not allow to generate what-if scenario easily .</span></p>
+                <p class="ps3"><span class="ts3">&nbsp;</span></p>
+                <h3 class="hd1"><span class="ts8">Example</span></h3>
+                <p class="ps3"><span class="ts3">On an offshore field, it is planned to drill 6 wells on 2 different platforms, with Rig move and shutdown associated.</span></p>
+                <p class="ps3"><span class="ts3">&nbsp;</span></p>
+                <h3 class="hd1"><span class="ts8">Sub-Optimum modeling: using Hard date only.</span></h3>
+                <p class="ps3"><span class="ts3">The above scenario can be modeled using &quot;Hard&quot; date only</span></p>
+                <p class="ps3"><span class="ts3">Start date of new profiles from the new drilled wells can be entered in the &quot;New profiles&quot; section (see </span><a href="new-profile.htm" class="hs1">New profiles</a><span class="ts3">)</span></p>
+                <p class="ps3"><span class="ts3">Start and End date of the shutdowns associated with the Rig move can be entered in the &quot;Shutdowns&quot; section (see&nbsp; </span><a href="shutdown.htm" class="hs1">Shutdowns</a><span class="ts3">)</span></p>
+                <p class="ps3"><span class="ts3">&nbsp;</span></p>
+                <p class="ps3"><span class="ts3">Now let's suppose the drilling schedule has changed, User will then has to changes manually all the new profiles starting date and shutdowns date, which is time consuming and prone to error.</span></p>
+                <p class="ps3"><span class="ts3">&nbsp;</span></p>
+                <p class="ps3"><span class="ts3">&nbsp;</span></p>
+                <h3 class="hd1"><span class="ts8">Optimum modeling: Create Opportunity and place them in the sequence of events</span></h3>
+                <p class="ps3"><span class="ts3">An opportunity should be created for every new well to be drilled. </span></p>
+                <p class="ps3"><span class="ts3">An opportunity should also be created for every Rig Move, with Shutdowns associated</span></p>
+                <p class="ps3"><span class="ts3">&nbsp;</span></p>
+                <p class="ps3"><span class="ts3">A sequence of events needs to be created for the &quot;Rig 1&quot; , (see </span><a href="sequence.htm" class="hs1">Sequence of events</a><span class="ts3">)</span></p>
+                <p class="ps3"><span class="ts3">The drilling of 6 wells + 4 Rig moves will then be placed in the sequence of events in the right order.</span></p>
+                <p class="ps3"><span class="ts8">&nbsp;</span></p>
+                <p><img width="1626" height="190" alt="" src="images/image(30).png" /></p>
+                <p class="ps3"><span class="ts3">&nbsp;</span></p>
+                <p class="ps3"><span class="ts3">Now, if a change in the drilling schedule occurs, such as late arrival for the Rig, only the mobilization date of the Rig has to be changed ,and the sequence of events and associated shutdowns will automatically be adjusted.</span></p>
+                <p class="ps3"><span class="ts3">&nbsp;</span></p>
+                <p class="ps3"><span class="ts3">&nbsp;</span></p>
+                <h3 class="hd1"><span class="ts3">A sequence of events can be:</span></h3>
+                <h3 class="hd1"><span class="ts3">&nbsp;- drilling of new wells</span></h3>
+                <h3 class="hd1"><span class="ts3">&nbsp;- facilities maintenance performed by a maintenance crew</span></h3>
+                <h3 class="hd1"><span class="ts3">&nbsp;- Well head maintenance performed by a Well Services crew</span></h3>
+                <h3 class="hd1"><span class="ts3">&nbsp;- Stimulation of several wells performed by Stimulation crew</span></h3>
+                <p class="ps2"><span class="ts2">&nbsp;</span></p>
+              </td>
+              <td class="cell2">
+                <p>&nbsp;</p>
+              </td>
+            </tr>
+            <tr class="row0">
+              <td class="cell4">
+                <p>&nbsp;</p>
+              </td>
+              <td class="cell5">
+                <p class="ps4"><span class="ts6">Copyright &copy; 2023 - Cleverfield</span></p>
+              </td>
+              <td class="cell0">
+                <p>&nbsp;</p>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </td>
+      <td class="cell0">
+        <p>&nbsp;</p>
+      </td>
+    </tr>
+  </table>
+</div>
+</body>
+</html>

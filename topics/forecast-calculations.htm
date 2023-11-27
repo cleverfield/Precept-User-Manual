@@ -1,0 +1,263 @@
+<!DOCTYPE HTML>
+<html id="hs-topic-p">
+<head>
+<title>Forecast calculations</title>
+<meta charset="windows-1252" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="generator" content="HelpSmith 9.7 (Build 23.607)" />
+<style type="text/css" media="screen">
+html {
+  height: 100%;
+}
+body {
+  background-color: #f0f3f7;
+  margin: 12px 0 12px 0;
+}
+</style>
+<link type="text/css" rel="stylesheet" href="../css/topics/style.css" />
+<script type="text/javascript" src="../js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="../js/settings.js?3a5a7ad9"></script>
+<script type="text/javascript" src="../js/core.min.js?3e9f1cdf"></script>
+<script type="text/javascript" src="../js/topic.min.js?3e9f1cdf"></script>
+<script type="text/javascript">
+	var topicContext = 300;
+</script>
+<!-- Web Help Topic -->
+</head>
+<body>
+<div>
+  <table class="align-c tbl0">
+    <tr class="row0">
+      <td class="cell0">
+        <p>&nbsp;</p>
+      </td>
+      <td class="cell1">
+        <div>
+          <table class="align-c tbl1">
+            <tr class="row0">
+              <td class="cell0">
+                <p>&nbsp;</p>
+              </td>
+              <td class="cell1">
+                <div>
+                  <table class="align-c tbl2">
+                    <tr class="row0">
+                      <td class="cell0">
+                        <p class="ps0"><span class="ts0">Navigation: &lt;Root level&gt;</span></p>
+                        <h1 class="hd0"><span class="ts1">Forecast calculations</span></h1>
+                      </td>
+                      <td class="cell1">
+                        <p class="ps1"><a href="probabilistic.htm" title="probabilistic"><img width="32" height="32" alt="" src="images/navigation%20links/previous%20bluetriangles32.png" /></a><span class="ts0">&nbsp;</span><a href="forecast-results.htm" title="Forecast results"><img width="32" height="32" alt="" src="images/navigation%20links/next%20bluetriangles32.png" /></a></p>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+              </td>
+              <td class="cell0">
+                <p>&nbsp;</p>
+              </td>
+            </tr>
+            <tr class="row0">
+              <td class="cell2">
+                <p>&nbsp;</p>
+              </td>
+              <td class="cell3">
+                <p class="ps2"><span class="ts2">&nbsp;</span></p>
+                <p class="ps3"><span class="ts3">Below is a simplified forecast diagram.</span></p>
+                <p class="ps3"><span class="ts3">&nbsp;</span></p>
+                <p><img width="1050" height="614" alt="" src="images/image(90).png" /></p>
+                <p class="ps3"><span class="ts3">&nbsp;</span></p>
+                <p class="ps3"><span class="ts3">At every timestep, Precept:</span></p>
+                <p class="ps3"><span class="ts3">&nbsp;- checks if a new profile comes online or if a well is converted (see </span><a href="new-profile.htm" class="hs1">New profiles</a><span class="ts3">)</span></p>
+                <p class="ps3"><span class="ts3">&nbsp;- calculates the Production and Injection potentials for very wells using DCA curves (see </span><a href="dca.htm" class="hs1">Decline curves: Production and Injection potentials</a><span class="ts3">)</span></p>
+                <p class="ps3"><span class="ts3">&nbsp;- apply the necessary planned shutdowns (see </span><a href="shutdown.htm" class="hs1">Shutdowns</a><span class="ts3">)</span></p>
+                <p class="ps3"><span class="ts3">&nbsp;- apply the constraints to the production network</span></p>
+                <p class="ps3"><span class="ts3">&nbsp;</span></p>
+                <p class="ps3"><span class="ts3">Forecast outputs are:</span></p>
+                <p class="ps3"><span class="ts3">&nbsp;- Constrained Production and injection at every nodes of the network (can be grouped by Project when visualizing results (see </span><a href="results-charts.htm" class="hs1">Forecast results: Charts</a><span class="ts3">)</span></p>
+                <p class="ps3"><span class="ts3">&nbsp;- shortfalls, grouped by Project</span></p>
+                <p class="ps3"><span class="ts3">&nbsp;- GHG emission</span></p>
+                <p class="ps3"><span class="ts3">&nbsp;- economics</span></p>
+                <p class="ps3"><span class="ts3">&nbsp;</span></p>
+                <p class="ps3"><span class="ts3">&nbsp;</span></p>
+                <h3 class="hd1"><span class="ts8">Calculations</span></h3>
+                <p class="ps3"><span class="ts3">At every time step, Precept needs to solve a set of equations using Linear Solver.</span></p>
+                <p class="ps3"><span class="ts3">&nbsp;</span></p>
+                <p class="ps3"><span class="ts3">Let's use the simple example below, where 3 wells flow only oil to a Node called &quot;Manifold&quot;. A pipeline connects the node &quot;Manifold&quot; to a node called &quot;FSO&quot;.</span></p>
+                <p class="ps3"><span class="ts3">&nbsp;</span></p>
+                <p><img width="575" height="210" alt="" src="images/image(91).png" /></p>
+                <p>&nbsp;</p>
+                <p class="ps3"><span class="ts3">The following steps are performed at every timestep to calculate constrained forecast:</span></p>
+                <p class="ps3"><span class="ts3">&nbsp;</span></p>
+                <div>
+                  <table class="tbl4">
+                    <tr class="row0">
+                      <td class="cell0">
+                        <p class="ps6"><span class="ts14">Step</span></p>
+                      </td>
+                      <td class="cell1">
+                        <p class="ps3"><span class="ts14">Actions</span></p>
+                      </td>
+                    </tr>
+                    <tr class="row1">
+                      <td class="cell0">
+                        <p class="ps6"><span class="ts15">&nbsp;</span></p>
+                        <p class="ps6"><span class="ts15">&nbsp;</span></p>
+                        <p class="ps6"><span class="ts15">&nbsp;</span></p>
+                        <p class="ps6"><span class="ts15">&nbsp;</span></p>
+                        <p class="ps6"><span class="ts14">1</span></p>
+                      </td>
+                      <td class="cell1">
+                        <p class="ps3"><span class="ts16">&nbsp;</span></p>
+                        <p class="ps3"><span class="ts17">Introduce the </span><span class="ts18">known 3 parameters</span><span class="ts17">&nbsp; to the problem.</span></p>
+                        <p class="ps3"><span class="ts17">Known parameters are&nbsp; Oil potentials for every wells.</span></p>
+                        <p class="ps3"><span class="ts17">Potentials are nown since they derived from DCA curves.</span></p>
+                        <p class="ps3"><span class="ts17">Paramters are named:</span></p>
+                        <p class="ps3"><span class="ts17">&nbsp;- Pot_Oil_Well_1</span></p>
+                        <p class="ps3"><span class="ts17">&nbsp;- Pot_Oil_Well_2</span></p>
+                        <p class="ps3"><span class="ts17">&nbsp;- Pot_Oil_Well_3</span></p>
+                      </td>
+                    </tr>
+                    <tr class="row2">
+                      <td class="cell0">
+                        <p class="ps6"><span class="ts15">&nbsp;</span></p>
+                        <p class="ps6"><span class="ts15">&nbsp;</span></p>
+                        <p class="ps6"><span class="ts15">&nbsp;</span></p>
+                        <p class="ps6"><span class="ts14">2</span></p>
+                      </td>
+                      <td class="cell1">
+                        <p class="ps3"><span class="ts16">&nbsp;</span></p>
+                        <p class="ps3"><span class="ts17">Introduce the </span><span class="ts18">unknown variables</span><span class="ts17">&nbsp;(Choke opening) to the problems.</span></p>
+                        <p class="ps3"><span class="ts16">&nbsp;</span></p>
+                        <p class="ps3"><span class="ts17">In our example, there are 3 choke variables and are named:</span></p>
+                        <p class="ps3"><span class="ts17">-choke_Well_1</span></p>
+                        <p class="ps3"><span class="ts17">-choke_Well_2</span></p>
+                        <p class="ps3"><span class="ts17">-choke_Well_3</span></p>
+                      </td>
+                    </tr>
+                    <tr class="row3">
+                      <td class="cell0">
+                        <p class="ps6"><span class="ts15">&nbsp;</span></p>
+                        <p class="ps6"><span class="ts15">&nbsp;</span></p>
+                        <p class="ps6"><span class="ts14">3</span></p>
+                      </td>
+                      <td class="cell1">
+                        <p class="ps3"><span class="ts16">&nbsp;</span></p>
+                        <p class="ps3"><span class="ts17">Introduce the </span><span class="ts18">unknown variables</span><span class="ts17">&nbsp;(oil flowing through pipeline) to the problems.</span></p>
+                        <p class="ps3"><span class="ts16">&nbsp;</span></p>
+                        <p class="ps3"><span class="ts17">In our example, there is one pipeline from &quot;Manifold&quot; to &quot;FSO&quot;.</span></p>
+                        <p class="ps3"><span class="ts17">Variable is named:</span></p>
+                        <p class="ps3"><span class="ts17">-Oil_from_Manifold_to_FSO</span></p>
+                        <p class="ps3"><span class="ts16">&nbsp;</span></p>
+                      </td>
+                    </tr>
+                    <tr class="row4">
+                      <td class="cell0">
+                        <p class="ps6"><span class="ts15">&nbsp;</span></p>
+                        <p class="ps6"><span class="ts15">&nbsp;</span></p>
+                        <p class="ps6"><span class="ts14">4</span></p>
+                      </td>
+                      <td class="cell1">
+                        <p class="ps3"><span class="ts16">&nbsp;</span></p>
+                        <p class="ps3"><span class="ts17">Formulate the conservation of Volume at every nodes: Whatever goes in = Whatever goes out</span></p>
+                        <p class="ps3"><span class="ts16">&nbsp;</span></p>
+                        <p class="ps3"><span class="ts17">In our example, the conservation of volume is applied to &quot;Manifold&quot; nde only</span></p>
+                        <p class="ps3"><span class="ts3">&nbsp;</span></p>
+                        <p class="ps3"><span class="ts17">Choke_Well1 * Pot_Oil_Well1&nbsp; +&nbsp; Choke_Well2 * Pot_Oil_Well2&nbsp; +&nbsp; Choke_Well3 * Pot_Oil_Well3&nbsp; =&nbsp; Oil_from_Manifold_to_FSO</span></p>
+                      </td>
+                    </tr>
+                    <tr class="row5">
+                      <td class="cell0">
+                        <p class="ps6"><span class="ts15">&nbsp;</span></p>
+                        <p class="ps6"><span class="ts15">&nbsp;</span></p>
+                        <p class="ps6"><span class="ts15">&nbsp;</span></p>
+                        <p class="ps6"><span class="ts14">5</span></p>
+                      </td>
+                      <td class="cell1">
+                        <p class="ps3"><span class="ts16">&nbsp;</span></p>
+                        <p class="ps3"><span class="ts17">Add Well constraints to the problem.</span></p>
+                        <p class="ps3"><span class="ts17">Choke openings need to be netween 0 and 1.</span></p>
+                        <p class="ps3"><span class="ts3">&nbsp;</span></p>
+                        <p class="ps3"><span class="ts17">&nbsp; 0 &lt;=&nbsp; Choke_Well1&nbsp; &lt;= 1</span></p>
+                        <p class="ps3"><span class="ts17">&nbsp; 0 &lt;=&nbsp; Choke_Well2&nbsp; &lt;= 1</span></p>
+                        <p class="ps3"><span class="ts17">&nbsp; 0 &lt;=&nbsp; Choke_Well3&nbsp; &lt;= 1</span></p>
+                      </td>
+                    </tr>
+                    <tr class="row6">
+                      <td class="cell0">
+                        <p class="ps6"><span class="ts15">&nbsp;</span></p>
+                        <p class="ps6"><span class="ts14">6</span></p>
+                      </td>
+                      <td class="cell1">
+                        <p class="ps3"><span class="ts17">Add Node constraints to the problem, for example, if the FSO cannot process more than 100,000 bpd</span></p>
+                        <p class="ps3"><span class="ts3">&nbsp;</span></p>
+                        <p class="ps3"><span class="ts17">Oil_from_Manifold_to_FSO &lt;= 100,000</span></p>
+                      </td>
+                    </tr>
+                    <tr class="row7">
+                      <td class="cell2">
+                        <p class="ps6"><span class="ts15">&nbsp;</span></p>
+                        <p class="ps6"><span class="ts14">7</span></p>
+                      </td>
+                      <td class="cell3">
+                        <p class="ps3"><span class="ts16">&nbsp;</span></p>
+                        <p class="ps3"><span class="ts17">Add &quot;Objective function&quot; to the problem.</span></p>
+                        <p class="ps3"><span class="ts17">In our example, the objective is to maximize the variable&nbsp; &quot;Oil_from_Manifold_to_FSO&quot;</span></p>
+                      </td>
+                    </tr>
+                    <tr class="row8">
+                      <td class="cell0">
+                        <p class="ps6"><span class="ts15">&nbsp;</span></p>
+                        <p class="ps6"><span class="ts14">8</span></p>
+                      </td>
+                      <td class="cell1">
+                        <p class="ps3"><span class="ts16">&nbsp;</span></p>
+                        <p class="ps3"><span class="ts17">Solve the Network ang get the values of variables</span></p>
+                        <p class="ps3"><span class="ts16">&nbsp;</span></p>
+                      </td>
+                    </tr>
+                    <tr class="row9">
+                      <td class="cell0">
+                        <p class="ps6"><span class="ts15">&nbsp;</span></p>
+                        <p class="ps6"><span class="ts14">9</span></p>
+                      </td>
+                      <td class="cell1">
+                        <p class="ps3"><span class="ts16">&nbsp;</span></p>
+                        <p class="ps3"><span class="ts17">Calculate constrained production </span></p>
+                        <p class="ps3"><span class="ts16">&nbsp;</span></p>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+                <p class="ps3"><span class="ts3">&nbsp;</span></p>
+                <p class="ps3"><span class="ts3">&nbsp;</span></p>
+                <p class="ps3"><span class="ts3">&nbsp;</span></p>
+                <p class="ps2"><span class="ts2">&nbsp;</span></p>
+              </td>
+              <td class="cell2">
+                <p>&nbsp;</p>
+              </td>
+            </tr>
+            <tr class="row0">
+              <td class="cell4">
+                <p>&nbsp;</p>
+              </td>
+              <td class="cell5">
+                <p class="ps4"><span class="ts6">Copyright &copy; 2023 - Cleverfield</span></p>
+              </td>
+              <td class="cell0">
+                <p>&nbsp;</p>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </td>
+      <td class="cell0">
+        <p>&nbsp;</p>
+      </td>
+    </tr>
+  </table>
+</div>
+</body>
+</html>
