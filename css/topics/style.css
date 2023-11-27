@@ -1,0 +1,467 @@
+﻿h1 {
+  margin: 0;
+  padding-top: 0;
+  padding-right: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  text-indent: 0;
+  text-align: left;
+  line-height: normal;
+  font-family: 'Times New Roman';
+  font-size: 18pt;
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: none;
+  text-transform: none;
+}
+h2 {
+  margin: 0;
+  padding-top: 0;
+  padding-right: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  text-indent: 0;
+  text-align: left;
+  line-height: normal;
+  font-family: 'Times New Roman';
+  font-size: 16pt;
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: none;
+  text-transform: none;
+}
+h3 {
+  margin: 0;
+  padding-top: 0;
+  padding-right: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  text-indent: 0;
+  text-align: left;
+  line-height: normal;
+  font-family: 'Times New Roman';
+  font-size: 14pt;
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: none;
+  text-transform: none;
+}
+h4 {
+  margin: 0;
+  padding-top: 0;
+  padding-right: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  text-indent: 0;
+  text-align: left;
+  line-height: normal;
+  font-family: 'Times New Roman';
+  font-size: 12pt;
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: none;
+  text-transform: none;
+}
+h5 {
+  margin: 0;
+  padding-top: 0;
+  padding-right: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  text-indent: 0;
+  text-align: left;
+  line-height: normal;
+  font-family: 'Times New Roman';
+  font-size: 10pt;
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: none;
+  text-transform: none;
+}
+h6 {
+  margin: 0;
+  padding-top: 0;
+  padding-right: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  text-indent: 0;
+  text-align: left;
+  line-height: normal;
+  font-family: 'Times New Roman';
+  font-size: 8pt;
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: none;
+  text-transform: none;
+}
+p {
+  margin: 0;
+  padding-top: 0;
+  padding-right: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  text-indent: 0;
+  text-align: left;
+  line-height: normal;
+  font-family: 'Times New Roman';
+  font-size: 12pt;
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: none;
+  text-transform: none;
+}
+map > area {
+  outline: none;
+}
+table.align-c {
+  margin: 0 auto;
+}
+table.align-r {
+  margin: 0 0 0 auto;
+}
+img {
+  border: none;
+}
+.float-pos-l {
+  float: left;
+}
+.float-pos-r {
+  float: right;
+}
+pre {
+  margin: 0;
+}
+.ts0 {
+  font-family: Verdana;
+  color: Black;
+}
+.ts1 {
+  font-family: Tahoma;
+  font-weight: bold;
+}
+.ts2 {
+  font-family: Tahoma;
+}
+.ts3 {
+  font-family: Verdana;
+}
+.ts4 {
+  font-family: Verdana;
+  font-weight: bold;
+  text-decoration: underline;
+}
+.ts5 {
+  font-family: Verdana;
+  font-weight: bold;
+}
+.ts6 {
+  font-family: Verdana;
+}
+.ts7 {
+  font-family: Verdana;
+}
+.ts8 {
+  font-family: Verdana;
+  font-weight: bold;
+}
+.ts9 {
+  font-family: Verdana;
+  text-decoration: underline;
+}
+.ts10 {
+  font-family: Calibri;
+  font-weight: bold;
+  color: Black;
+}
+.ts11 {
+  font-family: Calibri;
+  color: Black;
+}
+.ts12 {
+  font-family: Verdana;
+  font-size: 12pt;
+  font-weight: bold;
+}
+.ts13 {
+  font-family: Verdana;
+}
+.ts14 {
+  font-family: Verdana;
+  font-weight: bold;
+  color: Black;
+}
+.ts15 {
+  font-family: Verdana;
+  font-weight: bold;
+}
+.ts16 {
+  font-family: Verdana;
+}
+.ts17 {
+  font-family: Verdana;
+  color: Black;
+}
+.ts18 {
+  font-family: Verdana;
+  text-decoration: underline;
+  color: Black;
+}
+.hs0 {
+  font-family: Verdana;
+  text-decoration: none;
+  color: #337e91;
+}
+a.hs0:hover {
+  color: Black;
+}
+.hs1 {
+  font-family: Verdana;
+  text-decoration: underline;
+  color: Blue;
+}
+.hd0 {
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-left: 5px;
+  font-size: 12pt;
+}
+.hd1 {
+  font-size: 10pt;
+}
+.ps0 {
+  padding-top: 2px;
+  padding-left: 5px;
+  font-size: 8pt;
+}
+.ps1 {
+  padding-right: 5px;
+  text-align: right;
+  font-size: 8pt;
+}
+.ps2 {
+  font-size: 4pt;
+}
+.ps3 {
+  font-size: 10pt;
+}
+.ps4 {
+  font-size: 8pt;
+}
+.ps5 {
+  font-size: 11pt;
+}
+.ps6 {
+  text-align: center;
+  font-size: 10pt;
+}
+.tbl0 {
+  width: 100%;
+  border-collapse: collapse;
+  border-style: none;
+  background-color: White;
+}
+.tbl0 > tbody > tr.row0 {
+  border-style: none;
+}
+.tbl0 > tbody > tr > td.cell0 {
+  width: 15px;
+  vertical-align: top;
+  border-style: none;
+}
+.tbl0 > tbody > tr > td.cell1 {
+  vertical-align: top;
+  border-style: none;
+}
+.tbl1 {
+  width: 100%;
+  border-collapse: collapse;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #e5e5e5;
+}
+.tbl1 > tbody > tr.row0 {
+  border-style: none;
+}
+.tbl1 > tbody > tr > td.cell0 {
+  width: 6px;
+  vertical-align: top;
+  border-style: none;
+  background-color: #e5e5e5;
+}
+.tbl1 > tbody > tr > td.cell1 {
+  vertical-align: top;
+  border-style: none;
+  background-color: #e5e5e5;
+}
+.tbl1 > tbody > tr > td.cell2 {
+  width: 6px;
+  vertical-align: top;
+  border-style: none;
+  background-color: White;
+}
+.tbl1 > tbody > tr > td.cell3 {
+  vertical-align: top;
+  border-style: none;
+  background-color: White;
+}
+.tbl1 > tbody > tr > td.cell4 {
+  width: 6px;
+  height: 22px;
+  vertical-align: top;
+  border-style: none;
+  background-color: #e5e5e5;
+}
+.tbl1 > tbody > tr > td.cell5 {
+  vertical-align: middle;
+  border-style: none;
+  background-color: #e5e5e5;
+}
+.tbl2 {
+  width: 100%;
+  border-collapse: collapse;
+  border-top-style: none;
+  border-right-style: none;
+  border-bottom-style: solid;
+  border-left-style: none;
+  border-bottom-width: 3px;
+  border-bottom-color: #e6e6e6;
+}
+.tbl2 > tbody > tr.row0 {
+  border-style: none;
+}
+.tbl2 > tbody > tr > td.cell0 {
+  vertical-align: top;
+  border-style: none;
+  background-color: #e5e5e5;
+}
+.tbl2 > tbody > tr > td.cell1 {
+  width: 100px;
+  vertical-align: middle;
+  border-style: none;
+  background-color: #e5e5e5;
+}
+.tbl3 {
+  border-collapse: collapse;
+  border-style: none;
+}
+.tbl3 > tbody > tr.row0 {
+  height: 0.51cm;
+  border-style: none;
+}
+.tbl3 > tbody > tr.row1 {
+  height: 1.02cm;
+  border-style: none;
+}
+.tbl3 > tbody > tr.row2 {
+  border-style: none;
+}
+.tbl3 > tbody > tr > td.cell0 {
+  width: 7.57cm;
+  vertical-align: top;
+  border-style: solid;
+  border-width: 0.03cm;
+  border-color: Black;
+}
+.tbl3 > tbody > tr > td.cell1 {
+  width: 13.28cm;
+  vertical-align: top;
+  border-style: solid;
+  border-width: 0.03cm;
+  border-color: Black;
+}
+.tbl3 > tbody > tr > td.cell2 {
+  width: 7.57cm;
+  height: 22px;
+  vertical-align: top;
+  border-style: solid;
+  border-width: 0.03cm;
+  border-color: Black;
+}
+.tbl3 > tbody > tr > td.cell3 {
+  width: 13.28cm;
+  height: 22px;
+  vertical-align: top;
+  border-style: solid;
+  border-width: 0.03cm;
+  border-color: Black;
+}
+.tbl4 {
+  width: 27.94cm;
+  border-collapse: collapse;
+  border-style: none;
+}
+.tbl4 > tbody > tr.row0 {
+  height: 0.51cm;
+  border-style: none;
+}
+.tbl4 > tbody > tr.row1 {
+  height: 3.99cm;
+  border-style: none;
+}
+.tbl4 > tbody > tr.row2 {
+  height: 3.2cm;
+  border-style: none;
+}
+.tbl4 > tbody > tr.row3 {
+  height: 2.67cm;
+  border-style: none;
+}
+.tbl4 > tbody > tr.row4 {
+  height: 2.98cm;
+  border-style: none;
+}
+.tbl4 > tbody > tr.row5 {
+  height: 3.73cm;
+  border-style: none;
+}
+.tbl4 > tbody > tr.row6 {
+  height: 2.13cm;
+  border-style: none;
+}
+.tbl4 > tbody > tr.row7 {
+  height: 1.62cm;
+  border-style: none;
+}
+.tbl4 > tbody > tr.row8 {
+  height: 0.81cm;
+  border-style: none;
+}
+.tbl4 > tbody > tr.row9 {
+  height: 0.74cm;
+  border-style: none;
+}
+.tbl4 > tbody > tr > td.cell0 {
+  width: 1.77cm;
+  vertical-align: top;
+  border-style: solid;
+  border-width: 0.03cm;
+  border-color: Black;
+}
+.tbl4 > tbody > tr > td.cell1 {
+  width: 26.17cm;
+  vertical-align: top;
+  border-style: solid;
+  border-width: 0.03cm;
+  border-color: Black;
+}
+.tbl4 > tbody > tr > td.cell2 {
+  width: 1.77cm;
+  height: 1.55cm;
+  vertical-align: top;
+  border-style: solid;
+  border-width: 0.03cm;
+  border-color: Black;
+}
+.tbl4 > tbody > tr > td.cell3 {
+  width: 26.17cm;
+  height: 1.55cm;
+  vertical-align: top;
+  border-style: solid;
+  border-width: 0.03cm;
+  border-color: Black;
+}
+.hs-mobile img.hs-fullwidth-m {
+  width: 100%;
+  height: auto;
+  float: none;
+}
