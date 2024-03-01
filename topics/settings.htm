@@ -17,7 +17,7 @@ body {
 </style>
 <link type="text/css" rel="stylesheet" href="../css/topics/style.css" />
 <script type="text/javascript" src="../js/jquery-3.6.0.min.js"></script>
-<script type="text/javascript" src="../js/settings.js?946f7815"></script>
+<script type="text/javascript" src="../js/settings.js?b7d44e1d"></script>
 <script type="text/javascript" src="../js/core.min.js?3e9f1cdf"></script>
 <script type="text/javascript" src="../js/topic.min.js?3e9f1cdf"></script>
 <script type="text/javascript">
@@ -72,7 +72,7 @@ body {
                 <p class="ps3"><span class="ts3">&nbsp;</span></p>
                 <p class="ps3"><span class="ts3">For example, on an oil field mostly gas constrained with the objectives to optimize oil production, wells with high GOR will be choked back when gas process constraints are hit.</span></p>
                 <p class="ps3"><span class="ts3">&nbsp;</span></p>
-                <p class="ps3"><span class="ts3">Objective function is a not so easy function to set-up. This will normally be part of the initial modellling done by Cleverfield prior to install Precept. Should you wish to change the objective function, please contact Cleverfield.</span></p>
+                <p class="ps3"><span class="ts3">Objective function is a not so easy function to set-up. This is usually done by Cleverfield as part of the initial modeling. Should you wish to change the objective function, please contact Cleverfield.</span></p>
                 <p class="ps3"><span class="ts3">&nbsp;</span></p>
                 <p class="ps3"><span class="ts3">&nbsp;</span></p>
                 <p>&nbsp;</p>
@@ -94,13 +94,13 @@ body {
                 <p class="ps3"><span class="ts3">&nbsp;</span></p>
                 <p class="ps3"><span class="ts3">&nbsp;</span></p>
                 <p class="ps3"><span class="ts3">&nbsp;</span></p>
-                <h3 class="hd1"><span class="ts8">Flush production</span></h3>
-                <p class="ps3"><span class="ts3">If that option is activated, flush/ transient production will be taken into account, meaning that after a shutdown, a producer will restart at a higher rate. If that option is not activated, the production before and after the shutdown will be the same. That option requires additional timesteps and therefore takes more tiem to run. That option should therefore be activated only for short-term forecast.</span></p>
+                <h3 class="hd1"><span class="ts8">Transient production</span></h3>
+                <p class="ps3"><span class="ts3">If that option is activated, transient production/injection will be taken into account, meaning that after a shutdown, a producer will restart at a higher rate, and an injector at a lower rate (due to time needed for bean-up). If that option is not activated, the production before and after the shutdown will be the same. That option requires additional timesteps and therefore takes more time to run. That option should therefore be activated only for short-term forecast. (see </span><a href="transient.htm" class="hs1">Transient</a><span class="ts3">)</span></p>
                 <p class="ps3"><span class="ts8">&nbsp;</span></p>
                 <p class="ps3"><span class="ts3">&nbsp;</span></p>
                 <p class="ps3"><span class="ts3">&nbsp;</span></p>
                 <h3 class="hd1"><span class="ts8">Voidage</span></h3>
-                <p class="ps3"><span class="ts3">if that option is activated, Precept will calculate production and injection per Patterns at reservoir conditions using the PVT data entered in the PVT section (</span><a href="pvt.htm" class="hs1">PVT</a><span class="ts3">)</span></p>
+                <p class="ps3"><span class="ts3">if that option is activated, Precept will calculate production and injection per Patterns at reservoir conditions using the PVT data entered in the PVT section (</span><a href="pvt.htm" class="hs1">PVT</a><span class="ts3">) and the patterns properties (see </span><a href="patterns.htm" class="hs1">Patterns</a><span class="ts3">)</span></p>
                 <p class="ps3"><span class="ts3">&nbsp;</span></p>
                 <p class="ps3"><span class="ts3">&nbsp;</span></p>
                 <h3 class="hd1"><span class="ts8">GHG emission:</span></h3>
@@ -108,7 +108,7 @@ body {
                 <p class="ps3"><span class="ts3">&nbsp;</span></p>
                 <p class="ps3"><span class="ts3">&nbsp;</span></p>
                 <h3 class="hd1"><span class="ts8">Economics:</span></h3>
-                <h3 class="hd1"><span class="ts3">if that option is activated, Precept will calculate Economics.</span></h3>
+                <p class="ps3"><span class="ts3">if that option is activated, Precept will calculate basic economics. (see </span><a href="economical-screener.htm" class="hs1">Economical screener</a><span class="ts3">)</span></p>
                 <p class="ps3"><span class="ts3">&nbsp;</span></p>
                 <p class="ps3"><span class="ts3">&nbsp;</span></p>
                 <h3 class="hd1"><span class="ts8">What-if scenario:</span></h3>
@@ -121,8 +121,8 @@ body {
                 <h3 class="hd1"><span class="ts8">Uptime</span></h3>
                 <p class="ps3"><span class="ts3">Uptime can be set at 3 levels. </span></p>
                 <p class="ps3"><span class="ts3">&nbsp;- Field level: from the settings input.</span></p>
-                <p class="ps3"><span class="ts3">&nbsp;- Manifold level: manifold are nodes directly downstream of a producer, or directly upstream of an injector. Uptime for manifold can be set from the &quot;Constraints changes vs time&quot; input interface. ( see </span><a href="constraintsvstime.htm" class="hs1">Constraints changes vs time</a><span class="ts3">&nbsp;)</span></p>
-                <p class="ps3"><span class="ts3">- Well level:</span><span class="ts3">&nbsp;Uptime for well can be set from the &quot;Constraints changes vs time&quot; input interface. ( see </span><a href="constraintsvstime.htm" class="hs1">Constraints changes vs time</a><span class="ts3">&nbsp;)</span></p>
+                <p class="ps3"><span class="ts3">&nbsp;- Manifold level: manifold are nodes directly downstream of a producer, or directly upstream of an injector. Uptime for manifold can be set from the &quot;Constraints changes vs time&quot; interface. ( see </span><a href="constraintsvstime.htm" class="hs1">Constraints changes vs time</a><span class="ts3">&nbsp;)</span></p>
+                <p class="ps3"><span class="ts3">&nbsp;- Well level:</span><span class="ts3">&nbsp;Uptime for wells can be set from the &quot;Constraints changes vs time&quot; interface. ( see </span><a href="constraintsvstime.htm" class="hs1">Constraints changes vs time</a><span class="ts3">&nbsp;)</span></p>
                 <p class="ps3"><span class="ts3">&nbsp;</span></p>
                 <h3 class="hd1"><span class="ts3">Therefore:</span></h3>
                 <h3 class="hd1"><span class="ts3">At every time step, the total uptime for a well is:&nbsp; Total Uptime for a well&nbsp; = Field uptime x Manifold Uptime x Well Uptime</span></h3>

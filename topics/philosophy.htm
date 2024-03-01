@@ -17,7 +17,7 @@ body {
 </style>
 <link type="text/css" rel="stylesheet" href="../css/topics/style.css" />
 <script type="text/javascript" src="../js/jquery-3.6.0.min.js"></script>
-<script type="text/javascript" src="../js/settings.js?946f7815"></script>
+<script type="text/javascript" src="../js/settings.js?b7d44e1d"></script>
 <script type="text/javascript" src="../js/core.min.js?3e9f1cdf"></script>
 <script type="text/javascript" src="../js/topic.min.js?3e9f1cdf"></script>
 <script type="text/javascript">
@@ -71,30 +71,30 @@ body {
                 <p class="ps3"><span class="ts3">- shutdowns</span></p>
                 <p class="ps3"><span class="ts3">&nbsp;</span></p>
                 <p class="ps3"><span class="ts3">The date of such events can be &quot;hard&quot;:</span></p>
-                <p class="ps3"><span class="ts3">- Start date of new profile can be manually entered in the &quot;New profiles&quot; section (see </span><a href="new-profile.htm" class="hs1">New profile</a><span class="ts3">)</span></p>
-                <p class="ps3"><span class="ts3">- Conversion date can be manually entered in the &quot;Conversion&quot; section (see </span><a href="conversion.htm" class="hs1">Well conversion</a><span class="ts3">)</span></p>
-                <p class="ps3"><span class="ts3">- Date of changes in constraints can be entered manually in the &quot;Constaints changes vs time&quot; section (see </span><a href="constraintsvstime.htm" class="hs1">Constraints changes vs time</a><span class="ts3">)</span></p>
+                <p class="ps3"><span class="ts3">- Start date of new profile can be manually entered in the &quot;New profiles&quot; section (see </span><a href="new-profiles.htm" class="hs1">New profile</a><span class="ts3">)</span></p>
+                <p class="ps3"><span class="ts3">- Conversion date can be manually entered in the &quot;Conversion&quot; section (see </span><a href="conversions.htm" class="hs1">Well conversion</a><span class="ts3">)</span></p>
+                <p class="ps3"><span class="ts3">- Date of changes in constraints can be entered manually in the &quot;Constraints changes vs time&quot; section (see </span><a href="constraintsvstime.htm" class="hs1">Constraints changes vs time</a><span class="ts3">)</span></p>
                 <p class="ps3"><span class="ts3">- Shutdowns start and end date can be manually entered in the &quot;Shutdowns&quot; section (see </span><a href="shutdown.htm" class="hs1">Shutdowns</a><span class="ts3">)</span></p>
                 <p class="ps3"><span class="ts3">&nbsp;</span></p>
-                <p class="ps3"><span class="ts3">Entering &quot;hard&quot; date does not allow to generate what-if scenario easily .</span></p>
+                <p class="ps3"><span class="ts3">Entering &quot;hard&quot; date does not allow to generate what-if scenario easily. When using Precept, it is recommended to handle changes in future (i.e drilling of a new well) by creating opportunities, and having the opportunities in the sequence of events (i.e drilling schedule).</span></p>
                 <p class="ps3"><span class="ts3">&nbsp;</span></p>
                 <h3 class="hd1"><span class="ts8">Example</span></h3>
                 <p class="ps3"><span class="ts3">On an offshore field, it is planned to drill 6 wells on 2 different platforms, with Rig move and shutdown associated.</span></p>
                 <p class="ps3"><span class="ts3">&nbsp;</span></p>
                 <h3 class="hd1"><span class="ts8">Sub-Optimum modeling: using Hard date only.</span></h3>
                 <p class="ps3"><span class="ts3">The above scenario can be modeled using &quot;Hard&quot; date only</span></p>
-                <p class="ps3"><span class="ts3">Start date of new profiles from the new drilled wells can be entered in the &quot;New profiles&quot; section (see </span><a href="new-profile.htm" class="hs1">New profiles</a><span class="ts3">)</span></p>
+                <p class="ps3"><span class="ts3">Start date of new profiles from the new drilled wells can be entered in the &quot;New profiles&quot; section (see </span><a href="new-profiles.htm" class="hs1">New profiles</a><span class="ts3">)</span></p>
                 <p class="ps3"><span class="ts3">Start and End date of the shutdowns associated with the Rig move can be entered in the &quot;Shutdowns&quot; section (see&nbsp; </span><a href="shutdown.htm" class="hs1">Shutdowns</a><span class="ts3">)</span></p>
                 <p class="ps3"><span class="ts3">&nbsp;</span></p>
-                <p class="ps3"><span class="ts3">Now let's suppose the drilling schedule has changed, User will then has to changes manually all the new profiles starting date and shutdowns date, which is time consuming and prone to error.</span></p>
+                <p class="ps3"><span class="ts3">Now let's suppose the drilling schedule has changed, User will then has to change manually all the new profiles a</span><span class="ts3">nd shutdowns </span><span class="ts3">start date and end date, which is time consuming and prone to error.</span></p>
                 <p class="ps3"><span class="ts3">&nbsp;</span></p>
                 <p class="ps3"><span class="ts3">&nbsp;</span></p>
-                <h3 class="hd1"><span class="ts8">Optimum modeling: Create Opportunity and place them in the sequence of events</span></h3>
-                <p class="ps3"><span class="ts3">An opportunity should be created for every new well to be drilled. </span></p>
-                <p class="ps3"><span class="ts3">An opportunity should also be created for every Rig Move, with Shutdowns associated</span></p>
+                <h3 class="hd1"><span class="ts8">Optimum modeling: Create Opportunities and place them in the sequence of events</span></h3>
+                <p class="ps3"><span class="ts3">An opportunity should be created for every new wells to be drilled. (see </span><a href="opportunities.htm" class="hs1">Opportunities</a><span class="ts3">)</span></p>
+                <p class="ps3"><span class="ts3">An opportunity should also be created for every Rig Moves, with Shutdowns associated</span></p>
                 <p class="ps3"><span class="ts3">&nbsp;</span></p>
-                <p class="ps3"><span class="ts3">A sequence of events needs to be created for the &quot;Rig 1&quot; , (see </span><a href="sequence.htm" class="hs1">Sequence of events</a><span class="ts3">)</span></p>
-                <p class="ps3"><span class="ts3">The drilling of 6 wells + 4 Rig moves will then be placed in the sequence of events in the right order.</span></p>
+                <p class="ps3"><span class="ts3">A sequence of events needs to be created for the &quot;Rig 1&quot; , (see </span><a href="add-sequence.htm" class="hs1">Add / Delete sequence of events</a><span class="ts3">)</span></p>
+                <p class="ps3"><span class="ts3">The drilling of 6 wells + 4 Rig moves will then be placed in the sequence of events in the right order. (see </span><a href="build-sequence.htm" class="hs1">Build sequence of events</a><span class="ts3">)</span></p>
                 <p class="ps3"><span class="ts8">&nbsp;</span></p>
                 <p><img width="1626" height="190" alt="" src="images/image(30).png" /></p>
                 <p class="ps3"><span class="ts3">&nbsp;</span></p>
@@ -106,6 +106,7 @@ body {
                 <h3 class="hd1"><span class="ts3">&nbsp;- facilities maintenance performed by a maintenance crew</span></h3>
                 <h3 class="hd1"><span class="ts3">&nbsp;- Well head maintenance performed by a Well Services crew</span></h3>
                 <h3 class="hd1"><span class="ts3">&nbsp;- Stimulation of several wells performed by Stimulation crew</span></h3>
+                <h3 class="hd1"><span class="ts3">&nbsp;- etc...</span></h3>
                 <p class="ps2"><span class="ts2">&nbsp;</span></p>
               </td>
               <td class="cell2">
