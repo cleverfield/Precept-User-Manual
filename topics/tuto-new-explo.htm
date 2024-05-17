@@ -17,7 +17,7 @@ body {
 </style>
 <link type="text/css" rel="stylesheet" href="../css/topics/style.css" />
 <script type="text/javascript" src="../js/jquery-3.6.0.min.js"></script>
-<script type="text/javascript" src="../js/settings.js?ecffc53e"></script>
+<script type="text/javascript" src="../js/settings.js?d72d62cc"></script>
 <script type="text/javascript" src="../js/core.min.js?3e9f1cdf"></script>
 <script type="text/javascript" src="../js/topic.min.js?3e9f1cdf"></script>
 <script type="text/javascript">
@@ -83,13 +83,15 @@ body {
                 <p class="ps3"><span class="ts3">&nbsp;</span></p>
                 <p class="ps3"><span class="ts3">&nbsp;</span></p>
                 <h3 class="hd1"><span class="ts8">3. Create a new Project</span></h3>
-                <p class="ps3"><span class="ts3">The Asset does not have any project yet. A new project needs to be created. Go</span><span class="ts3">&nbsp;to 'Scenario Manager&quot;, then click on &quot;Create New Project&quot;. We will call the new project &quot;Evaluation&quot;</span></p>
-                <h3 class="hd1"><span class="ts3">Once created, select the project &quot;Evaluation&quot;.</span></h3>
-                <h3 class="hd1"><span class="ts3">The project &quot;Evaluation&quot; does not have any scenario yet.</span></h3>
+                <p class="ps3"><span class="ts3">The Asset does not have any project yet. A new project needs to be created.</span></p>
+                <p class="ps3"><span class="ts3">Go</span><span class="ts3">&nbsp;to 'Scenario Manager&quot;, then click on &quot;Create New Project&quot;. We will call the new project &quot;Evaluation&quot;</span></p>
+                <h3 class="hd1"><span class="ts3">Once created, select the project &quot;Evaluation&quot; from the Scenario Manager.</span></h3>
+                <p>&nbsp;</p>
                 <p><img width="984" height="238" alt="" src="images/image(155).png" /></p>
                 <p class="ps3"><span class="ts3">&nbsp;</span></p>
                 <p class="ps3"><span class="ts3">&nbsp;</span></p>
                 <h3 class="hd1"><span class="ts8">4. Create a new scenario</span></h3>
+                <h3 class="hd1"><span class="ts3">The project &quot;Evaluation&quot; does not have any scenario yet.</span></h3>
                 <h3 class="hd1"><span class="ts3">Click on &quot;Create new scenario&quot;. We will give it the name &quot;Base&quot;. The option &quot;share scenario with others users&quot; is not activated.</span></h3>
                 <h3 class="hd1"><span class="ts3">Enter the forecast Start and End date and click 'Create scenario'.</span></h3>
                 <p><img width="469" height="521" alt="" src="images/image(152).png" /></p>
@@ -108,7 +110,7 @@ body {
                 <p class="ps3"><span class="ts3">&nbsp;</span></p>
                 <p class="ps3"><span class="ts3">&nbsp;</span></p>
                 <h3 class="hd1"><span class="ts8">6. Edit Network, Add constraints</span></h3>
-                <p class="ps3"><span class="ts3">For our Brazilian asset, we will keep that network configuration but network can be modified if needed (see </span><a href="networkmodelling.htm" class="hs1">Network modelling</a><span class="ts3">)</span></p>
+                <p class="ps3"><span class="ts3">For our Brazilian asset, we will keep that default network configuration but network can be modified if needed (see </span><a href="networkmodelling.htm" class="hs1">Network modelling</a><span class="ts3">)</span></p>
                 <h3 class="hd1"><span class="ts3">We will simply add a 120,000 bopd oil constraint to the node &quot;Platform&quot; to model a production plateau.</span></h3>
                 <h3 class="hd1"><span class="ts3">After entering the 120,000 bopd oil constraint, do not forget to click &quot;Save Network'.</span></h3>
                 <p><img width="661" height="212" alt="" src="images/image(151).png" /></p>
@@ -122,11 +124,12 @@ body {
                 <p class="ps3"><span class="ts3">&nbsp;</span></p>
                 <h3 class="hd1"><span class="ts8">Add Oil producers</span></h3>
                 <h3 class="hd1"><span class="ts3">The inputs below will create a new well &quot;OP1&quot;, flowing to the node called &quot;OP&quot;. OP1 produces from the reservoir called &quot;Carbonate&quot; and is part of Phase 1 project.</span></h3>
-                <h3 class="hd1"><span class="ts3">Instead of creating 8 individuals wells, we can ask Precept to duplicate the well OP1 to create the wells OP2, OP3, etc... (click on the + button or copy-paste a list from Excel)</span></h3>
+                <h3 class="hd1"><span class="ts3">Instead of creating 8 individuals wells, we can ask Precept to duplicate the well OP1 to create the wells OP2, OP3, etc... (click on the + button and write the well names or copy-paste a list from Excel)</span></h3>
                 <p class="ps3"><span class="ts3">&nbsp;</span></p>
                 <p><img width="439" height="591" alt="" src="images/image(141).png" /></p>
                 <p class="ps3"><span class="ts3">&nbsp;</span></p>
-                <p class="ps3"><span class="ts3">Click on &quot;Add Well&quot;</span></p>
+                <p class="ps3"><span class="ts3">Once the input is as above, Click on &quot;Add Well&quot;.</span></p>
+                <p class="ps3"><span class="ts3">&nbsp;</span></p>
                 <p class="ps3"><span class="ts3">&nbsp;</span></p>
                 <p class="ps3"><span class="ts3">The 8 producers are now part of the Asset model.</span></p>
                 <p><img width="845" height="223" alt="" src="images/image(142).png" /></p>
@@ -134,15 +137,18 @@ body {
                 <p class="ps3"><span class="ts3">&nbsp;</span></p>
                 <h3 class="hd1"><span class="ts8">Add Water Injectors</span></h3>
                 <p class="ps3"><span class="ts8">&nbsp;</span></p>
-                <p class="ps3"><span class="ts3">4 Water Injectors are added using the inputs below, then </span><span class="ts3">click on &quot;Add Well'.</span></p>
+                <p class="ps3"><span class="ts3">4 Water Injectors are added using the inputs below.</span></p>
+                <p class="ps3"><span class="ts3">The water injected into the wells comes from the node 'WI'. </span></p>
                 <p><img width="447" height="592" alt="" src="images/image(139).png" /></p>
-                <p class="ps3"><span class="ts3">&nbsp;</span></p>
+                <h3 class="hd1"><span class="ts3">Once the input is as above, Click on &quot;Add Well&quot;.</span></h3>
                 <p class="ps3"><span class="ts3">&nbsp;</span></p>
                 <p class="ps3"><span class="ts3">&nbsp;</span></p>
                 <h3 class="hd1"><span class="ts8">Add Gas Injectors</span></h3>
                 <p class="ps3"><span class="ts8">&nbsp;</span></p>
-                <h3 class="hd1"><span class="ts3">4 Gas Injectors are added using the inputs below, then click on &quot;Add Well'.</span></h3>
+                <h3 class="hd1"><span class="ts3">4 Gas Injectors are added using the inputs below.</span></h3>
+                <h3 class="hd1"><span class="ts3">The gas injected into the wells comes from the node GI. </span></h3>
                 <p><img width="450" height="592" alt="" src="images/image(140).png" /></p>
+                <h3 class="hd1"><span class="ts3">Once the input is as above, Click on &quot;Add Well&quot;.</span></h3>
                 <p class="ps3"><span class="ts3">&nbsp;</span></p>
                 <p class="ps3"><span class="ts3">&nbsp;</span></p>
                 <p class="ps3"><span class="ts3">&nbsp;</span></p>
@@ -154,7 +160,7 @@ body {
                 <p class="ps3"><span class="ts3">Select the scenario 'Brazil - Evaluation - Base'</span></p>
                 <p class="ps3"><span class="ts3">Select the well &quot;OP1&quot;.</span></p>
                 <p class="ps3"><span class="ts3">&nbsp;</span></p>
-                <p class="ps3"><span class="ts3">Select &quot;Exponential&quot; as DCA method</span><span class="ts3">&nbsp;( see </span><a href="dca.htm" class="hs1">Decline curves: Production and Injection potentials</a><span class="ts3">)</span></p>
+                <p class="ps3"><span class="ts3">Select &quot;Exponential&quot; as DCA method (highlighted in red below)</span><span class="ts3">&nbsp;( see </span><a href="dca.htm" class="hs1">Decline curves: Production and Injection potentials</a><span class="ts3">)</span></p>
                 <p>&nbsp;</p>
                 <p class="ps3"><span class="ts3">DCA forecast can be modified by drag-and-drop points on the chart or by directly modifying the value in the table.</span></p>
                 <p class="ps3"><span class="ts3">&nbsp;</span></p>
@@ -170,8 +176,9 @@ body {
                 <p class="ps3"><span class="ts3">&nbsp;</span></p>
                 <h3 class="hd1"><span class="ts3">b factor is 0 since exponential decline is selected.</span></h3>
                 <p class="ps3"><span class="ts3">&nbsp;</span></p>
-                <h3 class="hd1"><span class="ts3">Click &quot;Save' to save the DCA for OP1</span></h3>
+                <p>&nbsp;</p>
                 <p><img width="1175" height="812" alt="" src="images/image(173).png" /></p>
+                <h3 class="hd1"><span class="ts3">Once the input is as above, Click &quot;Save&quot; to save the DCA for OP1.</span></h3>
                 <p class="ps3"><span class="ts3">&nbsp;</span></p>
                 <p class="ps3"><span class="ts3">&nbsp;</span></p>
                 <p class="ps3"><span class="ts3">&nbsp;</span></p>
@@ -179,19 +186,19 @@ body {
                 <p class="ps3"><span class="ts3">Select the well WI1</span></p>
                 <h3 class="hd1"><span class="ts3">Select &quot;Multi-segment vs Cum&quot; as DCA method.</span></h3>
                 <p class="ps3"><span class="ts3">In our example, we will use a constant Water Injection potential of 5000 bwpd (only one segment is needed). </span></p>
-                <p class="ps3"><span class="ts3">Make sure the end date of the DCA (highlighted in red below) is enough to cover the full duration of the forecast.</span></p>
-                <h3 class="hd1"><span class="ts3">Click &quot;Save' to save the DCA for WI1.</span></h3>
+                <p class="ps3"><span class="ts3">Make sure the end date of the DCA (highlighted in red below) is enough to cover the full duration of the forecast (ie: Make sure you enter a high Cum Water Injection number)</span></p>
+                <p>&nbsp;</p>
                 <p><img width="710" height="623" alt="" src="images/image(110).png" /></p>
-                <p class="ps3"><span class="ts3">&nbsp;</span></p>
+                <h3 class="hd1"><span class="ts3">Once the input is as above, click &quot;Save' to save the DCA for WI1.</span></h3>
                 <p class="ps3"><span class="ts3">&nbsp;</span></p>
                 <p class="ps3"><span class="ts3">&nbsp;</span></p>
                 <h3 class="hd1"><span class="ts8">Gas Injector GI1</span></h3>
                 <p class="ps3"><span class="ts3">Select the well GI1</span></p>
                 <h3 class="hd1"><span class="ts3">Select &quot;Multi-segment vs Cum&quot; as DCA method.</span></h3>
                 <h3 class="hd1"><span class="ts3">In our example, we will use a constant Gas Injection potential of 5000 mscf/d. </span></h3>
-                <h3 class="hd1"><span class="ts3">Click &quot;Save' to save the DCA for GI1</span></h3>
+                <h3 class="hd1"><span class="ts3">Make sure the end date of the DCA&nbsp; is enough to cover the full duration of the forecast (ie: Make sure you enter a high Cum Gas Injection number)</span></h3>
                 <p><img width="715" height="627" alt="" src="images/image(111).png" /></p>
-                <p class="ps3"><span class="ts3">&nbsp;</span></p>
+                <h3 class="hd1"><span class="ts3">Once the input is as above, click &quot;Save' to save the DCA for GI1</span></h3>
                 <p class="ps3"><span class="ts3">&nbsp;</span></p>
                 <p class="ps3"><span class="ts3">&nbsp;</span></p>
                 <h3 class="hd1"><span class="ts8">Duplicate the decline curves</span></h3>
@@ -245,12 +252,13 @@ body {
                 <h3 class="hd1"><span class="ts8">Opportunity to drill Oil producer OP1</span></h3>
                 <p class="ps3"><span class="ts8">&nbsp;</span></p>
                 <p class="ps3"><span class="ts3">The inputs below will create an Opportunity to drill the well OP1</span></p>
-                <p class="ps3"><span class="ts3">Duration is set at 60 days.</span></p>
-                <p class="ps3"><span class="ts3">The start date is set at &quot;from sequence&quot; meaning the opportunity start date is not &quot;hard&quot; but opportunity is going to be executed as part of a sequence.</span></p>
+                <p class="ps3"><span class="ts3">Drilling duration is set at 60 days.</span></p>
+                <p class="ps3"><span class="ts3">The start date is set at &quot;From sequence&quot; meaning the opportunity start date is not &quot;hard&quot; but opportunity is going to be executed as part of a sequence.</span></p>
                 <p class="ps3"><span class="ts3">Opportunity will be colored green in the drilling sequence.</span></p>
                 <p class="ps3"><span class="ts3">&nbsp;</span></p>
                 <p class="ps3"><span class="ts3">Impact on forecast is set to &quot;New profile. The new profile OP1 (which we defined in the DCA module) will come online once the opportunity OP1 is executed.</span></p>
                 <p class="ps3"><span class="ts3">CAPEX is 20,000,000 USD</span></p>
+                <p class="ps3"><span class="ts3">The column 'Project&quot; is autofilled once the &quot;new profile name&quot; is entered ,since the project for that well was already defined when we introduced the well in the Network module at step 7.</span></p>
                 <p><img width="1086" height="812" alt="" src="images/image(169).png" /></p>
                 <p class="ps3"><span class="ts3">&nbsp;</span></p>
                 <p class="ps3"><span class="ts3">&nbsp;</span></p>
@@ -265,10 +273,10 @@ body {
                 <p class="ps3"><span class="ts3">For visualization purposes, we can change the color of the opportunities to drill WI and GI wells.</span></p>
                 <p class="ps3"><span class="ts3">&nbsp;</span></p>
                 <p class="ps3"><span class="ts3">Highlight the well &quot;WI1&quot; and click 'Edit&quot;. Change its color to blue and &quot;Save&quot;</span></p>
-                <h3 class="hd1"><span class="ts3">Click &quot;Refresh&quot;, you can now see that the column 'Color' for the WI1 has changed. Copy-paste (Ctr+C&nbsp;&nbsp; Ctr +V) that value for other WI wells.</span></h3>
+                <h3 class="hd1"><span class="ts3">Click &quot;Refresh&quot;, you can now see that the column 'Color' for the WI1 has changed. Copy-paste (Ctr+C&nbsp;&nbsp; Ctr +V) that color for other WI wells.</span></h3>
                 <p class="ps3"><span class="ts3">&nbsp;</span></p>
                 <h3 class="hd1"><span class="ts3">Highlight the well &quot;GI1&quot; and click 'Edit&quot;. Change its color to Red and &quot;Save&quot;</span></h3>
-                <h3 class="hd1"><span class="ts3">Click &quot;Refresh&quot;, you can now see that the column 'Color' for the GI1 has changed. Copy-paste (Ctr+C&nbsp;&nbsp; Ctr +V) that value for other GI wells.</span></h3>
+                <h3 class="hd1"><span class="ts3">Click &quot;Refresh&quot;, you can now see that the column 'Color' for the GI1 has changed. Copy-paste (Ctr+C&nbsp;&nbsp; Ctr +V) that color for other GI wells.</span></h3>
                 <p class="ps3"><span class="ts3">&nbsp;</span></p>
                 <p class="ps3"><span class="ts3">&nbsp;</span></p>
                 <p class="ps3"><span class="ts3">&nbsp;</span></p>
@@ -311,7 +319,7 @@ body {
                 <h3 class="hd1"><span class="ts8">11. Run the forecast</span></h3>
                 <p class="ps3"><span class="ts3">Set the forecast Start and End date and Click on &quot;Run Forecast&quot;.</span></p>
                 <p class="ps3"><span class="ts3">The timeline shows wells are put on production/injection once they are drilled.</span></p>
-                <p class="ps3"><span class="ts3">Timeline indicates when the plateau is reached (gree color on the row &quot;Platform&quot;).</span></p>
+                <p class="ps3"><span class="ts3">Timeline indicates when the plateau is reached (green color on the row &quot;Platform&quot;).</span></p>
                 <p class="ps3"><span class="ts3">Timeline also highlights which wells are closed or choked-back when the 120,000 oil plateau is reached.</span></p>
                 <p><img width="1198" height="358" alt="" src="images/image(133).png" /></p>
                 <p class="ps3"><span class="ts3">&nbsp;</span></p>
